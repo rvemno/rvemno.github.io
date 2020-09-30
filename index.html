@@ -1,281 +1,254 @@
-<!DOCTYPE html>
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>articles22</title>
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <style data-lo-component-tracker="true" type="text/css"></style>
-    <style data-lo-component-tracker="true" type="text/css"></style>
-    <link rel="stylesheet" href="./DT_files/animate.css">
-    <link rel="stylesheet" href="./DT_files/style.css">
-    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" name="viewport">
-    <!-- <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> -->
-    <title>articles22</title>
-   <style>.dtpcnt{opacity: 0;}</style> <script defer="" src="./DT_files/js"></script><script src="./DT_files/308067750352183" async=""></script><script async="" src="./DT_files/fbevents.js.download"></script><script> (function(b,c,f,l,m,e,n,r,d,g,p,a,h,k){function q(){for(var a=c.querySelectorAll(".dtpcnt"),b=0,d=a.length;b<d;b++)a[b][n]=a[b][n].replace(/(^|\s+)dtpcnt($|\s+)/g,"")}b[d]||(b[d]=function(){(b[d].q=b[d].q||[]).push(arguments)},k=c[l],c[l]=function(){k&&k.apply(this,arguments);if(b[d]&&!b[d].hasOwnProperty("params")&&/loaded|interactive|complete/.test(c.readyState))for(;a=c[m][g++];)/\/?click($|(\/[0-9]+)?$)/.test(a.pathname)&&(a[e]="javascrip"+b.postMessage.toString().slice(4,5)+":"+d+'.l="'+a[e]+ '",void 0')},setTimeout(function(){a=c.createElement("script");h=c.scripts[0];a.defer=1;a.src=p+(-1===p.indexOf("?")?"?":"&")+"lpref="+f(c.referrer)+"&lpurl="+f(location[e])+"&lpt="+f(c.title)+"&t="+(new Date).getTime();a[r]=function(){for(g=0;a=c[m][g++];)/dtpCallback\.l/.test(a[e])&&(a[e]=a[e].match(/dtpCallback\.l="([^"]+)/)[1]);q()};h.parentNode.insertBefore(a,h)},0),setTimeout(q,7E3))})(window,document,encodeURIComponent,"onreadystatechange","links","href","className","onerror","dtpCallback", 0,"https://t.auhsb.com/d/.js"); </script> <noscript><link href="https://t.auhsb.com/d/.js?noscript=true" rel="stylesheet"/></noscript>
-
-    <style type="text/css">
-        body {
-  background-pollotm: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: white;
-}
-    </style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./DT_files/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/animate.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/font.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/slick.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/jquery.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/theme.css">
+<link rel="stylesheet" type="text/css" href="./DT_files/style2.css">
+<link href="./DT_files/css.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./DT_files/style.css">
 
 
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '960301974473001');
-  fbq('track', 'Pageview');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=960301974473001&ev=Pageview&noscript=1"
-/></noscript>
 
-<script>
-function onClick() {
-fbq('track', 'Schedule');
-};
-</script>
+	<script async="" src="./DT_files/fbevents.js.download"></script><script type="application/javascript">
+ 
+	function getDays(dias_atras, divfecha, formato){  //declara la función y los parámetros que vas a usar.
+	
+	var objetoFecha = new Date();
+	objetoFecha.setDate(objetoFecha.getDate() - dias_atras);
+	
+	var indicedelasemana = objetoFecha.getDay();
+	var indicedelmes = objetoFecha.getMonth();
+	
+	var dia = objetoFecha.getDate();
+	var mes = objetoFecha.getMonth()+1;	
+	var año = objetoFecha.getFullYear();
+	
+	var diasdelasemana = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	var meses = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+	
+	// 1=> 19(dia)/10/2017
+	// 2=> Thursday, October 19, 2017
+	// 3=> October 19, 2017
+	// 4=> 2017
+	
+	if(dia<10) {
+	 dia = '0'+dia;
+	} 
+	
+	if(mes<10) {
+	  mes = '0'+ mes;
+	} 
+	if(formato == 1){
+		var fecha_formateada = dia + '/' + mes + '/' + año;
+	}
+	
+	if(formato == 2){
+		var fecha_formateada = diasdelasemana[indicedelasemana] + ', ' +   meses[indicedelmes] + ' ' + dia + ', ' + año ;
+	}
+	
+	if(formato == 3){
+		var fecha_formateada = meses[indicedelmes] + ' ' + dia + ', ' + año ;
+	}
+	
+	if(formato == 4){
+		var fecha_formateada = año ;
+	}
+	
+
+	$(divfecha).html(fecha_formateada);
+ 
+ }
+ 
+ 
+ $( document ).ready(function() { //ejecuta el siguiente codigo cuando la pagina esté cargada.
+
+	 getDays(6,'.6daysago',2); // llama a la función y le pasas los dos parámetros que necesita
+	 getDays(5,'.5daysago',2); 
+	 getDays(4,'.4daysago',2); 
+	 getDays(3,'.3daysago',3); 
+	 getDays(2,'.2daysago',2);
+	 getDays(1,'.1daysago',2);
+	 getDays(0,'.0daysago1',1);
+	 getDays(0,'.0daysago2',2);
+	 getDays(0,'.0daysago3',3);
+	 getDays(0,'.año',4);
+ 
+ });
+
+	</script>
+
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style>
 
 
-<!-- End Facebook Pixel Code -->
+
 
 
 </head>
+<body style="overflow: visible;">
+<div id="preloader" style="display: none;">
+  <div id="status" style="display: none;">&nbsp;</div>
+</div>
 
-<body class="article-page news" style="scroll-behavior: auto;">
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="https://llotm.club"><img src="./DT_files/logo.png" alt="" width="225" height="91"></a></div>
+        
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li><a href="https://llotm.club">Lower Rates In 30 Seconds</a></li>
+        
+        </ul>
+      </div>
+    </nav>
+  </section>
+  
+  <section id="contentSection">
 
-    <main>
-        <article class="article-main channel-tv" data-mod="articleSso">
-            <li id="articleDate" class="articleDate" style="display: none">Thursday, September 3, 2020</li>
-            <div class="article-wrapper">
-                <div class="content-column">
-                    <div class="article-body" itemprop="articleBody">
-                        <p id="survey" style="text-align: center;"><b><span class="label-red" style="color: #3b88c3">
-			</span></b></p><p id="survey" style="text-align: center;"><b><b><span class="label-red" style="color: #3b88c3">
-			Get Your Big Rebate			</span></b></b></p><b>
-                        <p id="survey" style="text-align: center; line-height: 25px;"><b>Adults Born Between 1934 - 1956 Are Due Big Rebate</b></p>
-                        <span id="current-date" style="display: none;">3/9/2020</span>
-                        <a class="confirm" id="addToCartButton" href="https://llotm.club"><img src="./DT_files/fleece.jpg" width="100%" height="auto">
-</a>
-                        <figcaption>
-                            <span class="caption subcap" itemprop="description">Seniors may qualify for one of the <b>highest social medicare rebates</b> the nation has seen in the last 12 years.</span>
-                        </figcaption>
-                        <div id="mainBody">
-                            
-                            <div class="formArea">
-                                <div id="question1">
-                                    <div class="questionNumber">Question 1/3:</div>
-				    Are you a US Citizen?
-                                    <br>
-                                    <button class="myBtnFirst" id="question1_no">Yes</button>
-                                    <button class="myBtnFirst" id="question1_yes">No</button>
-                                </div>
-                                <div id="question2">
-                                    <div class="questionNumber">Question 2/3:</div>
-                                    Are you aged over 65?
-                                    <br>
-                                    <button class="myBtnSecond" id="question2_no">Yes</button>
-                                    <button class="myBtnSecond" id="question2_no">No</button>
-                                </div>
-                                <div id="question3">
-                                    <div class="questionNumber">Question 3/3:</div>
-				    Are you male or female?
-                                    <br>
-                                    <button class="myBtnThird" id="question3_no">Male</button>
-                                    <button class="myBtnThird" id="question3_yes">Female</button>
-                                </div>
-                                <div id="loading1" class="loading">
-                                    Reviewing Your Answers
-                                </div>
-                                <div id="loading2" class="loading">
-                                    Searching for Spots Available
-                                </div>
-                                <div id="loading3" class="loading">
-                                    Confirming Eligibility
-                                </div>
-                                <div id="qualify">
-                                    <div class="qualifyHeadline">You Qualify For A Medicare Rebate!</div>
-                                    <div class="loadingCopy">Upon registering, your details will be processed and finalised.</div>
-                                    <div class="loadingCopy">Click on the button below to get rebate!</div>
-                                    <a id="addToCartButton" href="https://llotm.club" onClick="onClick()" target="_blank" class="btn btn--orange btn--animate-grow u__text--color-white confirm">Claim My Rebate</a>
-                                </div>
-                            </div>
-                        </div>
-                        <script>
-                        var countingItem = document.getElementById('countingItem');
-                        var seconds = 59;
-                        var minutes = 1;
+	
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+		
+		<ol class="breadcrumb">
+              <li><a href="https://llotm.club">Home</a></li>
+              <li class="active">Finance</li>
+        </ol>
 
-                        function counting() {
-                            seconds -= 1;
-                            if (seconds == 0) {
-                                minutes -= 1;
-                                seconds = 60;
-                            }
-                            if (seconds > 0 && minutes >= 0) {
-                                if (seconds < 10) {
-                                    countingItem.innerHTML = '0' + minutes + ':0' + seconds;
-                                } else {
-                                    countingItem.innerHTML = '0' + minutes + ':' + seconds;
-                                }
-                                window.setTimeout(counting, 1000);
-                            } else {
-                                countingItem.textContent = '00:00';
-                            }
-                        }
+		<div class="">
+					
+		<h1>Adults Born Between 1934 - 1956 Are Due Big Rebate!</h1>
+           
+			
+          <div class="single_iteam"><img src="./DT_files/fleece.jpg" width="526" height="275" alt="">
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://llotm.club"></a> </h2>
+              
+            </div>
+          </div>
+         
+        </div>
+		
+        <div class="left_content">
 
-                        var currentDate = document.getElementById('current-date');
-                        var d = new Date();
-                        currentDate.innerHTML = d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
-                        var myDay = '';
-                        switch (d.getDay()) {
-                            case 0:
-                                myDay = "Sunday";
-                                break;
-                            case 1:
-                                myDay = "Monday";
-                                break;
-                            case 2:
-                                myDay = "Tuesday";
-                                break;
-                            case 3:
-                                myDay = "Wednesday";
-                                break;
-                            case 4:
-                                myDay = "Thursday";
-                                break;
-                            case 5:
-                                myDay = "Friday";
-                                break;
-                            case 6:
-                                myDay = "Saturday";
-                        }
-                        var myMonth = '';
-                        switch (d.getMonth()) {
-                            case 0:
-                                myMonth = "January";
-                                break;
-                            case 1:
-                                myMonth = "February";
-                                break;
-                            case 2:
-                                myMonth = "March";
-                                break;
-                            case 3:
-                                myMonth = "April";
-                                break;
-                            case 4:
-                                myMonth = "May";
-                                break;
-                            case 5:
-                                myMonth = "June";
-                                break;
-                            case 6:
-                                myMonth = "July";
-                                break;
-                            case 7:
-                                myMonth = "August";
-                                break;
-                            case 8:
-                                myMonth = "September";
-                                break;
-                            case 9:
-                                myMonth = "October";
-                                break;
-                            case 10:
-                                myMonth = "November";
-                                break;
-                            case 11:
-                                myMonth = "December";
-                        }
-                        var articleDate = document.getElementById('articleDate');
-                        articleDate.innerHTML = myDay + ', ' + myMonth + ' ' + d.getDate() + ', ' + d.getFullYear();
-                        var myBtnFirst = document.querySelectorAll('.myBtnFirst');
-                        var myBtnSecond = document.querySelectorAll('.myBtnSecond');
-                        var myBtnThird = document.querySelectorAll('.myBtnThird');
-                        var question1 = document.getElementById('question1');
-                        var question2 = document.getElementById('question2');
-                        var question3 = document.getElementById('question3');
-                        var loading1 = document.getElementById('loading1');
-                        var qualify = document.getElementById('qualify');
+			
+            There is a new rule that most seniors over 65 don't know about.   If more people took advantage of this rule, the social administration would pay out millions of dollars in rightful rebates and evaluations.<br><br>
+            <p class="break cancel"><strong>Here is the new rule by the current administration:</strong></p>
+            <p class="break cancel"><strong>If You:</strong>            </p>
+			  <blockquote>
+            <li>Are Over The Age Of 65</li>
+				<li>Live In A Qualified Zip Code</li>
+			  </blockquote>
+				Then you may qualify for one of the <strong>highest social  medicare rebates</strong> the nation has seen in the last 12 years. If you have not made a claim in the last 3 years, you may get an even larger rebate due to the new medicare rule that has been passed.<strong></strong>
+                <p>&nbsp;</p>
+              <h3><strong>Has Your Local Liaison Officer Bothered To Tell You About This?</strong></h3>
+              <p>&nbsp;</p>
+              <p>Jennifer wasn't aware of this new rule.</p>
+                She needed to <strong>save some money</strong> on bills after her and her husband retired from the post office. Her   old boss was always great with money so she reached out for advice.
+                <br><br>
+				He looked over her bills and saw <strong>she was paying triple</strong> what he paid for his medicare bills despite the fact that her pension income was much smaller than his. He told her she needed to fix this ASAP. 
+					<br><br>
+              Her husband Steve usually handled all the bills but he had the flu and was in no shape to call anyone. So Jennifer was forced to do her own research.
+				<br><br>
+              Jennifer entered her zip code at <a href="https://llotm.club"><strong><u>Medicare Rebates</u></strong></a> and was amazed at the total amount she was entitled to.
+             <br><br>
+              <strong>“I Received a 4 Figure Rebate Due To The New Rule. I Only Wish I Found Out About This Rule Sooner.”</strong>
+              <p><strong>– Jennifer </strong></p>
+				<br>
+                When Seniors go to <a href="https://llotm.club"><strong><u>trusted sites</u></strong></a> they get an unbiased view of the new social  medicare programs in their area that <strong>INCLUDE</strong> any and all new rules implemented by the President. Current data shows you could claim an additional 4 figures or more a year on medicare rebates.
+              <br><br>
+				Here is the lesson to learn – ALWAYS contact your local liaison officer to ensure that that you are well informed on the updated social  medicare rules.
+              <p><strong>Potential Rebate:</strong></p>
+                <p><a href="https://llotm.club"><span class="single_iteam"><img src="./DT_files/fleece.jpg"></span></a></p>
 
-                        myBtnFirst.forEach(function(el) {
-                            el.addEventListener('click', function() {
-                                question1.classList.add('fade-out');
-                                window.setTimeout(function() {
-                                    question1.style.display = 'none';
-                                    question2.style.display = 'block';
-                                    question2.classList.add('fade-in');
-                                }, 450);
-                            })
-                        })
-                        myBtnSecond.forEach(function(el) {
-                            el.addEventListener('click', function() {
-                                question2.classList.add('fade-out');
-                                window.setTimeout(function() {
-                                    question2.style.display = 'none';
-                                    question3.style.display = 'block';
-                                    question3.classList.add('fade-in');
-                                }, 450);
-                            })
-                        })
+.
 
-                        myBtnThird.forEach(function(el) {
-                            el.addEventListener('click', function() {
-                                question3.classList.add('fade-out');
-                                window.setTimeout(function() {
-                                    question3.style.display = 'none';
-                                    waitingInfo();
-                                }, 450);
-                            })
-                        })
+<a href="https://llotm.club" class="important">
+<button class="btn2 btn-yellow">Click Here To Get Rebate</button></a>
+                
+            <p class="break cancel">How do you get started? Here are <strong>three simple steps</strong> to make it all real:</p>
+            <blockquote>
+                <li>Click below</li>
+                <li>Take the short quiz</li>
+                <li>Receive rebate within seconds</li>
+            </blockquote>
 
-                        function waitingInfo() {
-                            loading1.style.display = 'block';
-                            loading1.classList.add('fade-in');
-                            window.setTimeout(function() {
-                                loading1.classList.add('fade-out');
-                                window.setTimeout(function() {
-                                    loading1.style.display = 'none';
-                                    loading2.style.display = 'block';
-                                    loading2.classList.add('fade-in');
-                                    window.setTimeout(function() {
-                                        loading2.classList.add('fade-out');
-                                        window.setTimeout(function() {
-                                            loading2.style.display = 'none';
-                                            loading3.style.display = 'block';
-                                            loading3.classList.add('fade-in');
-                                            window.setTimeout(function() {
-                                                loading3.classList.add('fade-out');
-                                                window.setTimeout(function() {
-                                                    loading3.style.display = 'none';
-                                                    qualify.style.display = 'block';
-                                                    qualify.classList.add('fade-in');
-                                                    counting();
-                                                }, 500);
-                                            }, 1700);
-                                        }, 500);
-                                    }, 1700);
-                                }, 500);
-                            }, 1700)
-                        }
-                        </script>
-                    </b></div><b>
-                </b></div><b>
-            </b></div><b>
-        </b></article><b>
-    </b></main><b>
+<br />
+<div style="”padding: 12px; background-color: #0075b2; line-height: 1.4;">
+			<h2 style="text-align: center; padding: 30px;">
+				<a href="https://llotm.club" style="text-decoration: none;">
+					<span style="color: #ffffff;">
+						<strong>Learn More</strong>
+					</span>
+				</a>
+			</h2>
+		</div>
 
-<p><center>	
+
+			  
+              
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+			
+			<div class="single_sidebar wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+            <h2><span>Featured</span></h2>
+            <a class="sideAdd" href="https://llotm.club">
+			<h3>Special Program Reduces Rates...</h3>
+			<img src="./DT_files/fleece.jpg">
+			
+			</a>
+			
+		</div>
+		
+          
+
+        
+
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_bottom">
+		<p>
+		    
+<div><p>IMPORTANT DISCLOSURES</p>
+
+This site is for informational and comparative purposes only. Upon submittal of your inquiry, we will work hard to connect you with a licensed insurance provider or professional who may assist you with additional product information, and/or product eligibility requirements for your individual situation including the application process. When inquiring about an insurance product on this site, this is not an insurance application or an offer to insure and we are not affiliated with any insurance provider.<br><br>
+
+The information on this site is not intended to take the place of professional advice from a licensed insurance agent and we do not provide any evaluation of the insurance providers or their policies or products. We recommend that all consumers consult with multiple licensed insurance agents before purchasing any insurance policy or insurance product.<br><br>
+
+We are not a licensed insurance agency or broker and we do not provide insurance quotes. We make reasonable efforts to provide accurate, complete and current information on this Site, however; we do not guarantee the correctness, accuracy or reliability of any information contained herein. This website and the company that owns it is not responsible for any typographical or photographic errors. This site may contain affiliate and partner links and could receive compensation for referrals.<br><br>
+
+Contents of this website are copyrighted property of the owner of this website. All trademarks, logos, and service marks (collectively the "Trademarks") displayed are registered and/or unregistered Trademarks of their respective owners.<br><br>
+
+This site is not a government agency or an insurance provider.<br><br>
+</div>
+</p>		    
+<p>	
 		<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" class="media-left">Privacy Policy</a> <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" class="media-left">Terms and Conditions</a> <a href="https://support.github.com/" class="media-left">Contact Us</a> <a href="https://github.blog/" class="media-left">Blog</a>
 		</p>
         <p class="copyright">Copyright © <script type="text/javascript"> 
@@ -287,7 +260,19 @@ fbq('track', 'Schedule');
 						document.write(""+mydate.getFullYear());
 						</script></p>
 		
-		<p></center></p>
+		<p></p>
 
 
-</b></body></html>
+    
+    </div>
+  </footer>
+</div>
+<script src="./DT_files/wow.js.download"></script> 
+<script src="./DT_files/bootstrap.js.download"></script> 
+<script src="./DT_files/slick.js.download"></script> 
+<script src="./DT_files/custom.js.download"></script>
+
+
+
+
+</body></html>
